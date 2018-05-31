@@ -58,9 +58,9 @@ const columnDefinitions = (sortable = true, resource, namespaces, onFilterClick,
     {
       title: formatTitle("Secured", "Percent of traffic that is TLSed"),
       key: "securedTraffic",
-      dataIndex: "meshedRequestPercent",
+      dataIndex: "tlsRequestPercent",
       className: "numeric",
-      sorter: sortable ? (a, b) => numericSort(a.meshedRequestPercent.get(), b.meshedRequestPercent.get()) : false,
+      sorter: sortable ? (a, b) => numericSort(a.tlsRequestPercent.get(), b.tlsRequestPercent.get()) : false,
       render: d => _.isNil(d) ? "---" : d.prettyRate()
     }
   ];

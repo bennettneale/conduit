@@ -55,7 +55,7 @@ export const metricsPropType = PropTypes.shape({
             latencyMsP50: PropTypes.string.isRequired,
             latencyMsP95: PropTypes.string.isRequired,
             latencyMsP99: PropTypes.string.isRequired,
-            meshedRequestCount: PropTypes.string.isRequired,
+            tlsRequestCount: PropTypes.string.isRequired,
             successCount: PropTypes.string.isRequired,
           }),
           timeWindow: PropTypes.string.isRequired,
